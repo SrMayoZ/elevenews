@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News</title>
+</head>
+<body>
+  <h1>News</h1>
+  <h1>Latest Cybersecurity News</h1>
+  <p>This is a new</p>
+
+  <!-- Mantén solo uno de los bloques *ngFor -->
+  <div *ngFor="let item of news" class="news-item">
+    <h2>{{ item.titulo }}</h2>
+    <p>{{ item.contenido }}</p>
+    <button (click)="readMore(item)">Leer más</button>
+  </div>
+</body>
+</html>
